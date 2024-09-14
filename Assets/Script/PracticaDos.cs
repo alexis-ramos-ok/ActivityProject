@@ -34,12 +34,21 @@ public class PracticaDos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Generamos tres números aleatorios entre -100 y 100
+        float num1 = Random.Range(-100f, 100f);
+        float num2 = Random.Range(-100f, 100f);
+        float num3 = Random.Range(-100f, 100f);
 
+        // Llamar a la función comparadora del ejercicio 1 con valores aleatorios
+        string resultado = Comparador(num1, num2, num3);
+
+        // Imprimir el resultado en la consola de Unity
+        Debug.Log(resultado);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
